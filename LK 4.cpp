@@ -15,7 +15,7 @@ public:
         delete[] img;
     }
 
-    int set(int x, int y, int color) 
+    void set(int x, int y, int color) 
     {
         if (x >= mx || y >= my || x < 0 || y < 0)
         {
@@ -24,7 +24,7 @@ public:
         img[y * my + x] = color;
     }
 
-    int get(int x, int y) 
+    void get(int x, int y) 
     {
         if (x >= mx || y >= my || x < 0 || y < 0) 
         {
